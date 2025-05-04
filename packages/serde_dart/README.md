@@ -6,8 +6,6 @@
 
 - **Serialization**: Convert Dart objects into formats like JSON or other custom formats.
 - **Deserialization**: Parse data formats (e.g., JSON) back into Dart objects.
-- **Type Safety**: Ensures that the data being serialized or deserialized matches the expected types.
-- **Customizable**: Allows customization of serialization and deserialization logic for complex use cases.
 
 ## Installation
 
