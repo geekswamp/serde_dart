@@ -1,5 +1,5 @@
 import 'package:meta/meta_meta.dart';
-import 'package:serde_annotation/src/field_format.dart';
+import 'package:serde_annotation/serde_annotation.dart';
 
 /// A constant instance of [Serde] with default values.
 ///
@@ -56,9 +56,9 @@ class Serde {
   /// objects to JSON.
   final bool? toJson;
 
-  /// The format to use for field names in the generated code.
+  /// The format to use for the field name in the serialized data.
   ///
-  /// This specifies how field names should be formatted, such as
-  /// `snake_case`, `kebab-case`, or `PascalCase`.
+  /// This format will be applied to the field name during serialization
+  /// and deserialization.
   final FieldFormat? fieldFormat;
 }
