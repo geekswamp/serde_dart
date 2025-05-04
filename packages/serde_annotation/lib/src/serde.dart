@@ -5,7 +5,7 @@ import 'package:serde_annotation/serde_annotation.dart';
 ///
 /// This instance provides default configurations for serialization and
 /// deserialization, including enabling `copyWith`, `equal`, `fromJson`,
-/// and `toJson` methods, and using `snake_case` for field names.
+/// and `toJson` methods, and using [FieldFormat.snakeCase] for field names.
 const serde = Serde(
   copyWith: true,
   equal: true,
