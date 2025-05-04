@@ -1,4 +1,5 @@
 import 'package:meta/meta_meta.dart';
+import 'package:serde_annotation/serde_annotation.dart';
 
 /// {@template serde_key}
 /// A class that provides metadata for serialization and deserialization of a field.
@@ -15,6 +16,7 @@ class SerdeKey {
     this.ignore = false,
     this.ignoreFromJson = false,
     this.ignoreToJson = false,
+    this.fieldFormat = FieldFormat.snakeCase,
   });
 
   /// The name of the field in the serialized data.
@@ -44,4 +46,10 @@ class SerdeKey {
   ///
   /// If `true`, the field will not be included in the serialized output.
   final bool? ignoreToJson;
+
+  /// The format to use for the field name in the serialized data.
+  ///
+  /// This format will be applied to the field name during serialization
+  /// and deserialization.
+  final FieldFormat fieldFormat;
 }
