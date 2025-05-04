@@ -13,4 +13,24 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  serde_dart: ^1.0.0
+  serde_dart: <latest-version>
+  
+dev_dependencies:
+  build_runner: <latest-version>
+  serde_annotation: <latest-version>
+```
+
+## Usage
+
+You can simply annotate your Dart classes with `@serde` to enable serialization and deserialization. Here's a quick example:
+
+```dart
+@serde
+class Person extends _$Person {
+  const Person(this.name, this.age, this.height);
+  
+  final String name;
+  final int age;
+  final int height;
+}
+```
