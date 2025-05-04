@@ -1,0 +1,1 @@
+packages/serde_dart/README.md
