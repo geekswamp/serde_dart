@@ -1,7 +1,8 @@
 name: serde_annotation
 description: "Annotations for the serde_dart library, providing a way to serialize and deserialize data structures."
 version: 0.0.1
-homepage:
+homepage: https://github.com/geekswamp/serde_dart
+repository: https://github.com/geekswamp/serde_dart
 topics: ["serde", "serde-dart", "build-runner", "annotation"]
 
 environment:

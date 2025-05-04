@@ -1,7 +1,8 @@
 name: serde_dart
 description: "A Dart library for serializing and deserializing data structures."
 version: 0.0.1
-homepage:
+homepage: https://github.com/geekswamp/serde_dart
+repository: https://github.com/geekswamp/serde_dart
 topics: ["serde", "serde-dart", "codegen", "json", "serialization", "deserialization"]
 
 environment:
