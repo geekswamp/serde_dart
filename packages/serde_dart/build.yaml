@@ -1,0 +1,18 @@
+targets:
+  $default:
+    builders:
+      serde:
+        enabled: true
+        generate_for:
+          exclude:
+            - test/*
+        options:
+          format: true
+
+builders:
+  serde:
+    import: "package:serde_dart/builder.dart"
+    builder_factories: ["serdeBuilder"]
+    build_extensions: {".dart": [".serde.dart"]}
+    auto_apply: dependents
+    build_to: source

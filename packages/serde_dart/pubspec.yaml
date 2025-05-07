@@ -3,7 +3,7 @@ description: "A Dart library for serializing and deserializing data structures."
 version: 0.0.1
 homepage: https://github.com/geekswamp/serde_dart
 repository: https://github.com/geekswamp/serde_dart
-topics: ["serde", "serde-dart", "codegen", "json", "serialization", "deserialization"]
+topics: ["serde", "serde-dart", "json", "serialization", "deserialization"]
 
 environment:
   sdk: ^3.7.2
@@ -12,7 +12,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  build: ^2.4.2
   source_gen: ^2.0.0
+  serde_annotation: ^0.0.1
+  analyzer: ^7.4.4
 
 dev_dependencies:
   flutter_test:
