@@ -3,6 +3,7 @@ description: "Annotations for the serde_dart library, providing a way to seriali
 version: 0.0.1
 homepage: https://github.com/geekswamp/serde_dart
 repository: https://github.com/geekswamp/serde_dart
+issue_tracker: https://github.com/geekswamp/serde_dart/issues
 topics: ["serde", "serde-dart", "build-runner", "annotation"]
 
 environment:
