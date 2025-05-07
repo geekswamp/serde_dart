@@ -13,11 +13,11 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  serde_dart: <latest-version>
+  serde_annotation: <latest-version>
   
 dev_dependencies:
   build_runner: <latest-version>
-  serde_annotation: <latest-version>
+  serde_dart: <latest-version>
 ```
 
 ## Usage
@@ -25,12 +25,22 @@ dev_dependencies:
 You can simply annotate your Dart classes with `@serde` to enable serialization and deserialization. Here's a quick example:
 
 ```dart
+part 'person.serde.dart';
+
 @serde
-class Person extends _$Person {
+class Person with _$Person {
   const Person(this.name, this.age, this.height);
   
   final String name;
   final int age;
   final int height;
+  @SerdeKey(ignore: true)
+  final String email;
+  @SerdeKey(name: 'birth_date')
+  final String bornDate;
+  
+  factory Person.fromJson(Map<String, dynamic> json) => _$PersonFromJson(json);
+    
+  Map<String, dynamic> toJson() => _$PersonToJson(this);
 }
 ```
